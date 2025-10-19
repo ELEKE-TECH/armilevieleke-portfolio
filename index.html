@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Armi Levi Eleke - Designer & Développeur Fullstack | Portfolio</title>
+    <meta name="description" content="Portfolio d'Armi Levi Eleke, Designer & Développeur Fullstack spécialisé en développement web, design UI/UX, et solutions digitales innovantes. Découvrez mes projets et compétences.">
+    <meta name="keywords" content="développeur fullstack, designer UI/UX, portfolio, développement web, JavaScript, React, Node.js, design, Armi Levi Eleke">
+    <meta name="author" content="Armi Levi Eleke">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://armilevieleke.onrender.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://armilevieleke.onrender.com">
+    <meta property="og:title" content="Armi Levi Eleke - Designer & Développeur Fullstack">
+    <meta property="og:description" content="Portfolio d'Armi Levi Eleke, Designer & Développeur Fullstack spécialisé en développement web, design UI/UX, et solutions digitales innovantes.">
+    <meta property="og:image" content="https://armilevieleke.onrender.com/img/armi.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Armi Levi Eleke Portfolio">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://armilevieleke.onrender.com">
+    <meta property="twitter:title" content="Armi Levi Eleke - Designer & Développeur Fullstack">
+    <meta property="twitter:description" content="Portfolio d'Armi Levi Eleke, Designer & Développeur Fullstack spécialisé en développement web, design UI/UX, et solutions digitales innovantes.">
+    <meta property="twitter:image" content="https://armilevieleke.onrender.com/img/armi.jpg">
+    <meta property="twitter:creator" content="@armilevieleke">
+    <meta property="twitter:site" content="@armilevieleke">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1e40af">
+    <meta name="msapplication-TileColor" content="#1e40af">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Armi Levi Portfolio">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Armi Levi Eleke",
+        "jobTitle": "Designer & Développeur Fullstack",
+        "description": "Designer & Développeur Fullstack spécialisé en développement web, design UI/UX, et solutions digitales innovantes",
+        "url": "https://armilevieleke.onrender.com",
+        "image": "https://armilevieleke.onrender.com/img/armi.jpg",
+        "sameAs": [
+            "https://www.facebook.com/armi.levieleke",
+            "https://github.com/armilevieleke",
+            "https://www.linkedin.com/in/armi-levi-eleke-668594246/"
+        ],
+        "knowsAbout": [
+            "Développement Web",
+            "Design UI/UX",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "HTML/CSS",
+            "Responsive Design",
+            "Full Stack Development"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Développeur Fullstack",
+            "description": "Développement d'applications web complètes, de la conception à la mise en production"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Formation en développement web"
+        },
+        "email": "armilevieleke@gmail.com",
+        "telephone": "(235) 65715956",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "N'Djamena",
+            "addressCountry": "Tchad"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "(235) 65715956",
+            "contactType": "professional",
+            "email": "armilevieleke@gmail.com"
+        }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af', // Bleu professionnel
+                        secondary: '#6b7280', // Gris neutre
+                        accent: '#f59e0b' // Orange/Ambre pour les accents
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-left': 'slideLeft 0.8s ease-out',
+                        'slide-right': 'slideRight 0.8s ease-out',
+                        'scale-in': 'scaleIn 0.6s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                        'gradient-y': 'gradient-y 15s ease infinite',
+                        'gradient-xy': 'gradient-xy 15s ease infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideLeft: {
+                            '0%': { transform: 'translateX(50px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-50px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' }
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.8)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.5)' },
+                            '100%': { boxShadow: '0 0 30px rgba(59, 130, 246, 0.8)' }
+                        },
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        'gradient-y': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'center top'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'center bottom'
+                            }
+                        },
+                        'gradient-xy': {
+                            '0%, 100%': {
+                                'background-size': '400% 400%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '400% 400%',
+                                'background-position': 'right center'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #6b7280;
+            --accent: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --border-radius: 0.75rem;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography Scale */
+        .text-xs { font-size: 0.75rem; line-height: 1rem; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .text-base { font-size: 1rem; line-height: 1.5rem; }
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+        .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+        .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+        .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+        .text-5xl { font-size: 3rem; line-height: 1; }
+        .text-6xl { font-size: 3.75rem; line-height: 1; }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .text-5xl { font-size: 2.5rem; }
+            .text-6xl { font-size: 3rem; }
+            .text-4xl { font-size: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            .text-5xl { font-size: 2rem; }
+            .text-6xl { font-size: 2.5rem; }
+            .text-4xl { font-size: 1.75rem; }
+        }
+
+        /* Animation Classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        .animate-slide-left {
+            animation: slideLeft 0.8s ease-out forwards;
+        }
+
+        .animate-slide-right {
+            animation: slideRight 0.8s ease-out forwards;
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.6s ease-out forwards;
+        }
+
+        /* Glass Morphism */
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .glass-effect-dark {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+
+        /* Hover Effects */
+        .hover-lift {
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .hover-scale {
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .hover-glow {
+            transition: var(--transition);
+        }
+
+        .hover-glow:hover {
+            box-shadow: 0 0 20px rgba(30, 64, 175, 0.3);
+        }
+
+        /* Magnetic Effect */
+        .magnetic {
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #3b82f6);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            padding: 0.75rem 2rem;
+            border: 2px solid var(--primary);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Card Styles */
+        .card {
+            background: var(--bg-primary);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-4px);
+        }
+
+        .card-interactive {
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .card-interactive:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        /* Expert Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .loading-screen::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.2) 0%, transparent 50%);
+            animation: gradient-shift 8s ease-in-out infinite;
+        }
+
+        .loading-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .loading-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            position: relative;
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        .loading-logo::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, #3b82f6, #f59e0b, #8b5cf6, #06b6d4);
+            border-radius: 50%;
+            animation: logoGlow 2s linear infinite;
+            z-index: -1;
+        }
+
+        .loading-logo-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .loading-logo-inner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: logoShine 2s linear infinite;
+        }
+
+        .loading-text {
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .loading-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #3b82f6, #f59e0b, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+
+        .loading-subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+        }
+
+        .loading-progress {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .loading-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #f59e0b, #8b5cf6);
+            border-radius: 2px;
+            width: 0%;
+            animation: progressLoad 3s ease-out forwards;
+            position: relative;
+        }
+
+        .loading-progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: progressShine 1.5s linear infinite;
+        }
+
+        .loading-percentage {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .loading-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .loading-dot {
+            width: 8px;
+            height: 8px;
+            background: #3b82f6;
+            border-radius: 50%;
+            animation: dotPulse 1.5s ease-in-out infinite;
+        }
+
+        .loading-dot:nth-child(2) {
+            animation-delay: 0.2s;
+            background: #f59e0b;
+        }
+
+        .loading-dot:nth-child(3) {
+            animation-delay: 0.4s;
+            background: #8b5cf6;
+        }
+
+        /* Expert Animations */
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+
+        @keyframes logoGlow {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.1); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+
+        @keyframes logoShine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        @keyframes titleGlow {
+            0% { filter: brightness(1) drop-shadow(0 0 10px rgba(59, 130, 246, 0.5)); }
+            100% { filter: brightness(1.2) drop-shadow(0 0 20px rgba(245, 158, 11, 0.5)); }
+        }
+
+        @keyframes progressLoad {
+            0% { width: 0%; }
+            30% { width: 25%; }
+            60% { width: 65%; }
+            90% { width: 95%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes progressShine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes dotPulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.5); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            100% { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        /* Loading Screen Exit Animation */
+        .loading-screen.exiting {
+            transform: scale(1.1);
+            opacity: 0;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform-origin: left;
+            transform: scaleX(0);
+            z-index: 1000;
+        }
+
+        /* Particle System */
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: particle-float 8s infinite linear;
+        }
+
+        /* Navigation */
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            .grid-responsive {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .text-responsive {
+                font-size: clamp(1rem, 4vw, 1.5rem);
+            }
+        }
+
+        /* Touch Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .hover-lift:hover,
+            .hover-scale:hover,
+            .hover-glow:hover {
+                transform: none;
+                box-shadow: var(--shadow-md);
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High Contrast Mode */
+        @media (prefers-contrast: high) {
+            .glass-effect {
+                background: rgba(255, 255, 255, 0.9);
+                border: 2px solid var(--primary);
+            }
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideLeft {
+            from { 
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideRight {
+            from { 
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from { 
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to { 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--accent) }
+        }
+
+        /* Focus Styles for Accessibility */
+        .focus-visible:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Performance Optimizations */
+        .will-change-transform {
+            will-change: transform;
+        }
+
+        .will-change-opacity {
+            will-change: opacity;
+        }
+
+        /* Container Queries Support */
+        @supports (container-type: inline-size) {
+            .container-responsive {
+                container-type: inline-size;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Expert Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <!-- Logo avec animations -->
+            <div class="loading-logo">
+                <div class="loading-logo-inner">
+                    AL
+                </div>
+            </div>
+            
+            <!-- Texte principal -->
+            <div class="loading-text">
+                <h1 class="loading-title">Armi Levi Eleke</h1>
+                <p class="loading-subtitle">Designer & Développeur Fullstack</p>
+            </div>
+            
+            <!-- Barre de progression -->
+            <div class="loading-progress">
+                <div class="loading-progress-bar"></div>
+            </div>
+            <div class="loading-percentage" id="loading-percentage">0%</div>
+            
+            <!-- Dots animés -->
+            <div class="loading-dots">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scroll-indicator"></div>
+
+    <!-- Particle Container -->
+    <div id="particle-container" class="fixed inset-0 pointer-events-none z-10"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold gradient-text hover-scale">
+                    <a href="#accueil" class="focus-visible">Armi Levi Eleke</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#accueil" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                        Accueil
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#projets" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                        Projets
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#designs" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                        Designs
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#formations" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                        Formations
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="btn-primary text-sm px-6 py-2">
+                        <i class="fas fa-envelope mr-2"></i>Me contacter
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-primary hover:text-accent transition-colors p-2 focus-visible">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-screen bg-white z-40 transform -translate-x-full transition-transform duration-300">
+                <div class="flex flex-col h-full">
+                    <div class="flex justify-between items-center p-4 border-b">
+                        <div class="text-xl font-bold gradient-text">Armi Levi Eleke</div>
+                        <button id="mobile-menu-close" class="text-gray-500 hover:text-primary p-2">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center items-center space-y-8">
+                        <a href="#accueil" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Accueil</a>
+                        <a href="#projets" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Projets</a>
+                        <a href="#designs" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Designs</a>
+                        <a href="#formations" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Formations</a>
+                        <a href="#contact" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Contact</a>
+                        <a href="#contact" class="btn-primary text-lg px-8 py-3 mt-4">
+                            <i class="fas fa-envelope mr-2"></i>Me contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+        <!-- Professional Background with Multiple Layers -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary to-blue-900"></div>
+        <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/20 to-accent/20"></div>
+        <div class="absolute inset-0 bg-black/30"></div>
+        
+        <!-- Animated Grid Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: 
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+                background-size: 50px 50px;"></div>
+        </div>
+        
+        <!-- Professional Floating Elements -->
+        <div class="absolute top-20 left-10 w-24 h-24 bg-gradient-to-br from-accent/30 to-accent/10 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute top-40 right-20 w-20 h-20 bg-gradient-to-br from-white/20 to-white/5 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-gradient-to-br from-accent/40 to-accent/20 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -4s;"></div>
+        
+        <!-- Professional Geometric Shapes -->
+        <div class="absolute top-1/4 right-1/4 w-40 h-40 border border-white/10 rotate-45 animate-float will-change-transform"></div>
+        <div class="absolute bottom-1/3 left-1/3 w-32 h-32 border border-accent/20 rounded-full animate-float will-change-transform" style="animation-delay: -3s;"></div>
+        <div class="absolute top-1/2 right-1/3 w-24 h-24 bg-gradient-to-br from-primary/20 to-transparent rotate-12 animate-float will-change-transform" style="animation-delay: -1s;"></div>
+        
+        <!-- Professional Code Background -->
+        <div class="absolute top-1/4 left-1/4 opacity-5 text-white font-mono text-xs">
+            <div class="animate-pulse-slow">
+                <div>&lt;div class="hero"&gt;</div>
+                <div>&nbsp;&nbsp;&lt;h1&gt;Armi Levi Eleke&lt;/h1&gt;</div>
+                <div>&nbsp;&nbsp;&lt;p&gt;Fullstack Developer&lt;/p&gt;</div>
+                <div>&lt;/div&gt;</div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Left Content - Professional Presentation -->
+                <div class="animate-fade-in text-center lg:text-left">
+                    <!-- Professional Badge -->
+                    <div class="mb-8">
+                        <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent/20 to-accent/10 backdrop-blur-sm rounded-full border border-accent/30 text-accent font-semibold text-sm animate-pulse-slow">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3 animate-ping"></div>
+                            <i class="fas fa-code mr-2"></i>Expert Fullstack Developer
+                        </div>
+                    </div>
+                    
+                    <!-- Professional Title -->
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black mb-8 leading-tight">
+                        <span class="block text-white">Armi Levi</span>
+                        <span class="block text-white">Eleke</span>
+                        <span class="gradient-text block mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold">
+                            Fullstack Developer
+                        </span>
+                    </h1>
+                    
+                    <!-- Professional Subtitle -->
+                    <div class="mb-8">
+                        <p class="text-xl sm:text-2xl text-blue-100 font-light leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">
+                            Je transforme vos idées en
+                            <span class="text-accent font-semibold">expériences numériques</span>
+                            exceptionnelles
+                        </p>
+                        <p class="text-lg text-blue-200 mt-4 animate-slide-up" style="animation-delay: 0.5s;">
+                            Design • Développement • Formation • Innovation
+                        </p>
+                    </div>
+                    
+                    <!-- Professional CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-6 animate-slide-up justify-center lg:justify-start" style="animation-delay: 0.7s;">
+                        <a href="#projets" class="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-accent to-yellow-500 text-white font-bold text-lg rounded-2xl shadow-2xl hover:shadow-accent/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+                            <span class="relative z-10 flex items-center">
+                                <i class="fas fa-rocket mr-3 text-xl"></i>
+                                Découvrir mes projets
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-accent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <a href="#contact" class="group inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold text-lg rounded-2xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-envelope mr-3"></i>
+                            Me contacter
+                        </a>
+                    </div>
+                    
+                    <!-- Professional Stats -->
+                    <div class="grid grid-cols-3 gap-8 mt-16 animate-slide-up" style="animation-delay: 0.9s;">
+                        <div class="text-center group">
+                            <div class="text-3xl sm:text-4xl font-black text-white mb-2 group-hover:text-accent transition-colors">50+</div>
+                            <div class="text-sm text-blue-200 font-medium">Projets Réalisés</div>
+                        </div>
+                        <div class="text-center group">
+                            <div class="text-3xl sm:text-4xl font-black text-white mb-2 group-hover:text-accent transition-colors">5+</div>
+                            <div class="text-sm text-blue-200 font-medium">Années d'Expérience</div>
+                        </div>
+                        <div class="text-center group">
+                            <div class="text-3xl sm:text-4xl font-black text-white mb-2 group-hover:text-accent transition-colors">100%</div>
+                            <div class="text-sm text-blue-200 font-medium">Satisfaction Client</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Professional Skills Showcase -->
+                <div class="relative animate-scale-in" style="animation-delay: 0.4s;">
+                    <!-- Main Skills Card -->
+                    <div class="glass-effect rounded-3xl p-8 hover-lift relative overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-5">
+                            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <div class="text-center mb-8">
+                                <h3 class="text-2xl font-bold text-white mb-2">Expertise Technique</h3>
+                                <p class="text-blue-200">Technologies maîtrisées</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-6">
+                                <!-- Development Skills -->
+                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group">
+                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
+                                        <i class="fas fa-code text-2xl text-accent"></i>
+                                    </div>
+                                    <h4 class="font-bold text-white mb-2 text-center">Développement</h4>
+                                    <p class="text-sm text-blue-200 text-center">Web & Mobile</p>
+                                    <div class="mt-3 flex justify-center">
+                                        <div class="w-full bg-white/20 rounded-full h-1">
+                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-4/5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Design Skills -->
+                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.1s;">
+                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
+                                        <i class="fas fa-palette text-2xl text-accent"></i>
+                                    </div>
+                                    <h4 class="font-bold text-white mb-2 text-center">Design</h4>
+                                    <p class="text-sm text-blue-200 text-center">UI/UX</p>
+                                    <div class="mt-3 flex justify-center">
+                                        <div class="w-full bg-white/20 rounded-full h-1">
+                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-5/6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Training Skills -->
+                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.2s;">
+                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
+                                        <i class="fas fa-chalkboard-teacher text-2xl text-accent"></i>
+                                    </div>
+                                    <h4 class="font-bold text-white mb-2 text-center">Formation</h4>
+                                    <p class="text-sm text-blue-200 text-center">Expertise</p>
+                                    <div class="mt-3 flex justify-center">
+                                        <div class="w-full bg-white/20 rounded-full h-1">
+                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-4/5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Innovation Skills -->
+                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.3s;">
+                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
+                                        <i class="fas fa-rocket text-2xl text-accent"></i>
+                                    </div>
+                                    <h4 class="font-bold text-white mb-2 text-center">Innovation</h4>
+                                    <p class="text-sm text-blue-200 text-center">Créativité</p>
+                                    <div class="mt-3 flex justify-center">
+                                        <div class="w-full bg-white/20 rounded-full h-1">
+                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-5/6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Professional Technologies -->
+                            <div class="mt-8 pt-6 border-t border-white/10">
+                                <p class="text-center text-blue-200 text-sm mb-4">Technologies maîtrisées</p>
+                                <div class="flex flex-wrap justify-center gap-2">
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">React</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Node.js</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">TypeScript</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Professional Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="flex flex-col items-center text-white/60">
+                <span class="text-sm mb-2">Découvrir</span>
+                <i class="fas fa-chevron-down text-xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <!-- Professional Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5"></div>
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute inset-0" style="background-image: 
+                    linear-gradient(rgba(30, 64, 175, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(30, 64, 175, 0.1) 1px, transparent 1px);
+                    background-size: 40px 40px;"></div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 right-20 w-32 h-32 bg-accent/10 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-20 left-20 w-24 h-24 bg-primary/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Professional Header -->
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full border border-primary/20 text-primary text-sm font-semibold mb-6">
+                    <div class="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></div>
+                    <i class="fas fa-code mr-2"></i>Portfolio Professionnel
+                </div>
+                <h2 class="text-5xl sm:text-6xl font-black text-primary mb-8 gradient-text">
+                    Projets Réalisés
+                </h2>
+                <p class="text-xl sm:text-2xl text-secondary max-w-4xl mx-auto leading-relaxed font-light">
+                    Découvrez mes applications web et mobiles, conçues avec les dernières technologies 
+                    et les meilleures pratiques de développement
+                </p>
+            </div>
+
+            <!-- Professional Filter System -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll">
+                <button class="filter-btn active group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-gradient-to-r from-primary to-blue-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-th-large mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Tous les projets
+                    </span>
+                </button>
+                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-globe mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Applications Web
+                    </span>
+                </button>
+                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-mobile-alt mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Applications Mobile
+                    </span>
+                </button>
+                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-shopping-cart mr-2 group-hover:rotate-12 transition-transform"></i>
+                        E-commerce
+                    </span>
+                </button>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="animate-on-scroll group project-card" data-category="e-commerce" style="animation-delay: 0.1s;">
+                    <div class="relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Project Image/Icon -->
+                        <div class="relative h-56 bg-gradient-to-br from-primary via-blue-600 to-blue-800 overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-gradient-x transition-all duration-700"></div>
+                            
+                            <!-- Floating Elements -->
+                            <div class="absolute top-4 left-4 w-12 h-12 bg-white/20 rounded-full animate-float"></div>
+                            <div class="absolute bottom-4 right-4 w-8 h-8 bg-accent/30 rounded-full animate-float" style="animation-delay: -1s;"></div>
+                            
+                            <!-- Main Icon -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                                    <i class="fas fa-shopping-cart text-4xl text-white"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Category Badge -->
+                            <div class="absolute top-4 right-4">
+                                <span class="px-4 py-2 bg-accent text-white text-xs font-bold rounded-full shadow-lg">
+                                    <i class="fas fa-store mr-1"></i>E-commerce
+                                </span>
+                            </div>
+                            
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                        </div>
+                        
+                        <!-- Project Content -->
+                        <div class="p-8">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div>
+                                    <h3 class="text-2xl font-black text-primary group-hover:text-accent transition-colors mb-2">
+                                        E-Commerce Platform
+                                    </h3>
+                                    <div class="flex items-center text-sm text-gray-500">
+                                        <i class="fas fa-calendar mr-2"></i>
+                                        <span>2024</span>
+                                        <span class="mx-2">•</span>
+                                        <i class="fas fa-clock mr-2"></i>
+                                        <span>3 mois</span>
+                                    </div>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group/link">
+                                        <i class="fas fa-external-link-alt text-sm group-hover/link:scale-110 transition-transform"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group/link">
+                                        <i class="fab fa-github text-sm group-hover/link:scale-110 transition-transform"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Description -->
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Plateforme e-commerce complète avec système de panier avancé, 
+                                paiement sécurisé et interface d'administration intuitive.
+                            </p>
+                            
+                            <!-- Technologies -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-bold text-gray-700 mb-3">Technologies utilisées</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
+                                        React
+                                    </span>
+                                    <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full hover:bg-secondary hover:text-white transition-all duration-300 cursor-pointer">
+                                        Node.js
+                                    </span>
+                                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300 cursor-pointer">
+                                        MongoDB
+                                    </span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full hover:bg-green-600 hover:text-white transition-all duration-300 cursor-pointer">
+                                        Stripe
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <!-- Features -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-bold text-gray-700 mb-3">Fonctionnalités</h4>
+                                <ul class="space-y-1 text-sm text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
+                                        Panier et checkout
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
+                                        Paiement sécurisé
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
+                                        Dashboard admin
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <!-- CTA -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#" class="text-primary font-bold hover:text-accent transition-colors inline-flex items-center group/cta">
+                                    Voir le projet 
+                                    <i class="fas fa-arrow-right ml-2 group-hover/cta:translate-x-1 transition-transform"></i>
+                                </a>
+                                <div class="flex items-center text-xs text-gray-400">
+                                    <i class="fas fa-eye mr-1"></i>
+                                    <span>2.5k vues</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.1s;">
+                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-mobile-alt text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">App Mobile Fitness</h3>
+                        <p class="text-secondary mb-4">Application mobile de suivi fitness avec tracking et communauté</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">React Native</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Firebase</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Redux</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
+                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.2s;">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-gray-600 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-chart-line text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Dashboard Analytics</h3>
+                        <p class="text-secondary mb-4">Tableau de bord analytique avec visualisations de données en temps réel</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Vue.js</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">D3.js</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Python</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
+                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.3s;">
+                    <div class="h-48 bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-graduation-cap text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Plateforme E-Learning</h3>
+                        <p class="text-secondary mb-4">Système d'apprentissage en ligne avec vidéos et quiz interactifs</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Angular</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Express</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
+                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.4s;">
+                    <div class="h-48 bg-gradient-to-br from-accent to-orange-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-utensils text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">App de Livraison</h3>
+                        <p class="text-secondary mb-4">Application de livraison de nourriture avec géolocalisation</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Flutter</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Firebase</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Maps API</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
+                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.5s;">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-indigo-600 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-briefcase text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">CRM Entreprise</h3>
+                        <p class="text-secondary mb-4">Système de gestion de la relation client pour PME</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Next.js</span>
+                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Prisma</span>
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">MySQL</span>
+                        </div>
+                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
+                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Designs Section -->
+    <section id="designs" class="py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+        <!-- Professional Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-l from-accent/5 via-transparent to-primary/5"></div>
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: 
+                    radial-gradient(circle at 20% 20%, rgba(30, 64, 175, 0.1) 2px, transparent 2px),
+                    radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.1) 2px, transparent 2px);
+                    background-size: 60px 60px;"></div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-20 w-40 h-40 bg-primary/5 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-20 right-20 w-32 h-32 bg-accent/5 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-1/2 w-24 h-24 bg-secondary/5 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Professional Header -->
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent/10 to-primary/10 rounded-full border border-accent/20 text-accent text-sm font-semibold mb-6">
+                    <div class="w-2 h-2 bg-accent rounded-full mr-3 animate-pulse"></div>
+                    <i class="fas fa-palette mr-2"></i>Portfolio Créatif
+                </div>
+                <h2 class="text-5xl sm:text-6xl font-black text-primary mb-8 gradient-text">
+                    Portfolio Design
+                </h2>
+                <p class="text-xl sm:text-2xl text-secondary max-w-4xl mx-auto leading-relaxed font-light">
+                    Mes créations visuelles et interfaces utilisateur qui allient esthétique, 
+                    fonctionnalité et expérience utilisateur exceptionnelle
+                </p>
+            </div>
+
+            <!-- Design Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll">
+                <button class="design-filter-btn active group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-gradient-to-r from-accent to-yellow-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-th-large mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Tous les designs
+                    </span>
+                </button>
+                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-mobile-alt mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Mobile UI
+                    </span>
+                </button>
+                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-desktop mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Web Design
+                    </span>
+                </button>
+                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
+                    <span class="flex items-center">
+                        <i class="fas fa-paint-brush mr-2 group-hover:rotate-12 transition-transform"></i>
+                        Branding
+                    </span>
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Design 1 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group">
+                    <div class="h-48 bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-paint-brush text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">UI/UX Mobile</h3>
+                        <p class="text-sm text-secondary">Interface utilisateur moderne</p>
+                    </div>
+                </div>
+
+                <!-- Design 2 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.1s;">
+                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-400 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-desktop text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Web Design</h3>
+                        <p class="text-sm text-secondary">Design responsive</p>
+                    </div>
+                </div>
+
+                <!-- Design 3 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.2s;">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-gray-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-palette text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Identité Visuelle</h3>
+                        <p class="text-sm text-secondary">Logo et branding</p>
+                    </div>
+                </div>
+
+                <!-- Design 4 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.3s;">
+                    <div class="h-48 bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-mobile-alt text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">App Design</h3>
+                        <p class="text-sm text-secondary">Interface mobile</p>
+                    </div>
+                </div>
+
+                <!-- Design 5 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.4s;">
+                    <div class="h-48 bg-gradient-to-br from-accent to-orange-400 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-chart-pie text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Dashboard UI</h3>
+                        <p class="text-sm text-secondary">Interface analytique</p>
+                    </div>
+                </div>
+
+                <!-- Design 6 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.5s;">
+                    <div class="h-48 bg-gradient-to-br from-secondary to-indigo-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-shopping-bag text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">E-commerce</h3>
+                        <p class="text-sm text-secondary">Design commercial</p>
+                    </div>
+                </div>
+
+                <!-- Design 7 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.6s;">
+                    <div class="h-48 bg-gradient-to-br from-primary to-teal-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-graduation-cap text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">E-learning</h3>
+                        <p class="text-sm text-secondary">Interface éducative</p>
+                    </div>
+                </div>
+
+                <!-- Design 8 -->
+                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.7s;">
+                    <div class="h-48 bg-gradient-to-br from-accent to-pink-500 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
+                        <i class="fas fa-heart text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Social App</h3>
+                        <p class="text-sm text-secondary">Design social</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section id="formations" class="py-24 bg-gradient-to-br from-primary/5 via-white to-accent/5 relative overflow-hidden">
+        <!-- Professional Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5"></div>
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute inset-0" style="background-image: 
+                    linear-gradient(45deg, rgba(30, 64, 175, 0.1) 1px, transparent 1px),
+                    linear-gradient(-45deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+                    background-size: 50px 50px;"></div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 right-20 w-36 h-36 bg-accent/10 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-20 left-20 w-28 h-28 bg-primary/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 right-1/3 w-20 h-20 bg-secondary/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Professional Header -->
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full border border-primary/20 text-primary text-sm font-semibold mb-6">
+                    <div class="w-2 h-2 bg-primary rounded-full mr-3 animate-pulse"></div>
+                    <i class="fas fa-chalkboard-teacher mr-2"></i>Formations Professionnelles
+                </div>
+                <h2 class="text-5xl sm:text-6xl font-black text-primary mb-8 gradient-text">
+                    Formations & Expertise
+                </h2>
+                <p class="text-xl sm:text-2xl text-secondary max-w-4xl mx-auto leading-relaxed font-light">
+                    Partagez mon expertise à travers des formations professionnelles, 
+                    des ateliers pratiques et un accompagnement personnalisé
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Formation 1 -->
+                <div class="animate-on-scroll bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group">
+                    <div class="text-accent text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4 group-hover:text-accent transition-colors">Développement Web Moderne</h3>
+                    <p class="text-secondary mb-4">
+                        Formation complète sur les technologies web actuelles : React, Node.js, bases de données.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li class="hover:text-primary transition-colors">• HTML5, CSS3, JavaScript ES6+</li>
+                        <li class="hover:text-primary transition-colors">• Frameworks React et Vue.js</li>
+                        <li class="hover:text-primary transition-colors">• Backend avec Node.js et Express</li>
+                        <li class="hover:text-primary transition-colors">• Bases de données SQL et NoSQL</li>
+                    </ul>
+                </div>
+
+                <!-- Formation 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Développement Mobile</h3>
+                    <p class="text-secondary mb-4">
+                        Apprenez à créer des applications mobiles performantes avec React Native et Flutter.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li>• React Native pour iOS/Android</li>
+                        <li>• Flutter pour applications cross-platform</li>
+                        <li>• Intégration d'APIs et services</li>
+                        <li>• Publication sur les stores</li>
+                    </ul>
+                </div>
+
+                <!-- Formation 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Design UI/UX</h3>
+                    <p class="text-secondary mb-4">
+                        Maîtrisez les principes du design d'interface et de l'expérience utilisateur.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li>• Principes du design d'interface</li>
+                        <li>• Recherche utilisateur et personas</li>
+                        <li>• Prototypage avec Figma/Adobe XD</li>
+                        <li>• Tests d'utilisabilité</li>
+                    </ul>
+                </div>
+
+                <!-- Formation 4 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Architecture & DevOps</h3>
+                    <p class="text-secondary mb-4">
+                        Formation sur l'architecture des applications et les pratiques DevOps modernes.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li>• Architecture microservices</li>
+                        <li>• Docker et conteneurisation</li>
+                        <li>• CI/CD et déploiement</li>
+                        <li>• Monitoring et performance</li>
+                    </ul>
+                </div>
+
+                <!-- Formation 5 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">E-commerce & Business</h3>
+                    <p class="text-secondary mb-4">
+                        Développez des solutions e-commerce complètes avec intégration de paiement.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li>• Plateformes e-commerce</li>
+                        <li>• Intégration de paiement</li>
+                        <li>• Gestion des stocks</li>
+                        <li>• Analytics et conversion</li>
+                    </ul>
+                </div>
+
+                <!-- Formation 6 -->
+                <div class="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Formation d'Équipe</h3>
+                    <p class="text-secondary mb-4">
+                        Accompagnement personnalisé pour équipes de développement et startups.
+                    </p>
+                    <ul class="text-sm text-secondary space-y-2">
+                        <li>• Formation sur mesure</li>
+                        <li>• Coaching technique</li>
+                        <li>• Code review et bonnes pratiques</li>
+                        <li>• Accompagnement projet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-slate-900 via-primary to-blue-900 text-white relative overflow-hidden">
+        <!-- Professional Background -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/20 to-accent/20"></div>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        
+        <!-- Animated Grid Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: 
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+                background-size: 40px 40px;"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-20 w-32 h-32 bg-accent/20 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-20 right-20 w-24 h-24 bg-white/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-1/2 w-16 h-16 bg-accent/30 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -4s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Professional Header -->
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent/20 to-accent/10 rounded-full border border-accent/30 text-accent text-sm font-semibold mb-6">
+                    <div class="w-2 h-2 bg-accent rounded-full mr-3 animate-ping"></div>
+                    <i class="fas fa-envelope mr-2"></i>Contact Professionnel
+                </div>
+                <h2 class="text-5xl sm:text-6xl font-black mb-8 gradient-text">
+                    Travaillons Ensemble
+                </h2>
+                <p class="text-xl sm:text-2xl text-blue-100 max-w-4xl mx-auto leading-relaxed font-light">
+                    Prêt à donner vie à votre projet ? Contactez-moi pour discuter de vos besoins 
+                    et créer quelque chose d'exceptionnel ensemble
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Information -->
+                <div class="animate-on-scroll">
+                    <div class="glass-effect rounded-3xl p-8 hover-lift">
+                        <h3 class="text-3xl font-black mb-8 text-white">
+                            Informations de Contact
+                        </h3>
+                        
+                        <!-- Contact Details -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-all duration-300">
+                                    <i class="fas fa-envelope text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-blue-200 text-sm font-medium">Email</div>
+                                    <a href="mailto:armilevieleke@gmail.com" class="text-white font-semibold hover:text-accent transition-colors">armilevieleke@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-all duration-300">
+                                    <i class="fas fa-phone text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-blue-200 text-sm font-medium">Téléphone</div>
+                                    <a href="tel:+23565715956" class="text-white font-semibold hover:text-accent transition-colors">(235) 65715956</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-all duration-300">
+                                    <i class="fas fa-map-marker-alt text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-blue-200 text-sm font-medium">Localisation</div>
+                                    <div class="text-white font-semibold">N'Djamena, Tchad</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center mr-4 group-hover:bg-accent/30 transition-all duration-300">
+                                    <i class="fas fa-globe text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-blue-200 text-sm font-medium">Website</div>
+                                    <a href="https://armilevieleke.onrender.com" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-accent transition-colors">armilevieleke.onrender.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div>
+                            <h4 class="text-xl font-bold mb-6 text-white">Suivez-moi</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/armi-levi-eleke-668594246/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-linkedin-in text-white group-hover:text-black text-lg"></i>
+                                </a>
+                                <a href="https://github.com/armilevieleke" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-github text-white group-hover:text-black text-lg"></i>
+                                </a>
+                                <a href="https://www.facebook.com/armi.levieleke" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-facebook-f text-white group-hover:text-black text-lg"></i>
+                                </a>
+                                <a href="mailto:armilevieleke@gmail.com" class="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fas fa-envelope text-white group-hover:text-black text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="glass-effect rounded-3xl p-8 hover-lift">
+                        <h3 class="text-3xl font-black mb-8 text-white">
+                            Envoyez-moi un message
+                        </h3>
+                        
+                        <form id="contactForm" class="space-y-6" action="https://formspree.io/f/xpwnqkqr" method="POST">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold mb-3 text-blue-200">Nom *</label>
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="Votre nom">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold mb-3 text-blue-200">Email *</label>
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="votre@email.com">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-semibold mb-3 text-blue-200">Sujet *</label>
+                                <input type="text" id="subject" name="subject" required class="w-full px-4 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300" placeholder="Sujet de votre message">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-semibold mb-3 text-blue-200">Message *</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300 resize-none" placeholder="Décrivez votre projet..."></textarea>
+                            </div>
+                            
+                            <!-- Message de statut -->
+                            <div id="formStatus" class="hidden p-4 rounded-2xl text-center font-semibold"></div>
+                            
+                            <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-accent to-yellow-500 text-white font-bold py-4 rounded-2xl hover:from-yellow-500 hover:to-accent transition-all duration-300 transform hover:scale-105 hover:shadow-xl group">
+                                <span class="flex items-center justify-center">
+                                    <i class="fas fa-paper-plane mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                    <span id="submitText">Envoyer le message</span>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="relative bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: 
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+                background-size: 30px 30px;"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-0 left-1/4 w-32 h-32 bg-accent/10 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-0 right-1/4 w-24 h-24 bg-primary/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        
+        <div class="relative z-10">
+            <!-- Main Footer Content -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+                    <!-- Brand Section -->
+                    <div class="lg:col-span-1">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-black gradient-text mb-4">Armi Levi Eleke</h3>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                                Développeur Fullstack passionné, je crée des expériences numériques exceptionnelles 
+                                qui transforment vos idées en réalité.
+                            </p>
+                        </div>
+                        
+                        <!-- Professional Badge -->
+                        <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-accent/20 to-accent/10 rounded-full border border-accent/30 text-accent text-sm font-semibold mb-6">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-2 animate-ping"></div>
+                            <i class="fas fa-code mr-2"></i>Disponible pour projets
+                        </div>
+                        
+                        <!-- Contact Info -->
+                        <div class="space-y-3">
+                            <div class="flex items-center text-gray-300 text-sm">
+                                <i class="fas fa-envelope text-accent mr-3"></i>
+                                <a href="mailto:armilevieleke@gmail.com" class="hover:text-accent transition-colors">armilevieleke@gmail.com</a>
+                            </div>
+                            <div class="flex items-center text-gray-300 text-sm">
+                                <i class="fas fa-phone text-accent mr-3"></i>
+                                <a href="tel:+23565715956" class="hover:text-accent transition-colors">(235) 65715956</a>
+                            </div>
+                            <div class="flex items-center text-gray-300 text-sm">
+                                <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                <span>N'Djamena, Tchad</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Section -->
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-6">Services</h4>
+                        <ul class="space-y-3">
+                            <li class="group">
+                                <a href="#projets" class="text-gray-300 hover:text-accent transition-colors text-sm flex items-center">
+                                    <i class="fas fa-arrow-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+                                    Développement Web
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#projets" class="text-gray-300 hover:text-accent transition-colors text-sm flex items-center">
+                                    <i class="fas fa-arrow-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+                                    Applications Mobile
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#designs" class="text-gray-300 hover:text-accent transition-colors text-sm flex items-center">
+                                    <i class="fas fa-arrow-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+                                    Design UI/UX
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#formations" class="text-gray-300 hover:text-accent transition-colors text-sm flex items-center">
+                                    <i class="fas fa-arrow-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+                                    Formation & Consulting
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a href="#projets" class="text-gray-300 hover:text-accent transition-colors text-sm flex items-center">
+                                    <i class="fas fa-arrow-right text-xs mr-2 group-hover:translate-x-1 transition-transform"></i>
+                                    E-commerce Solutions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Technologies Section -->
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-6">Technologies</h4>
+                        <div class="space-y-4">
+                            <!-- Frontend -->
+                            <div>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Frontend</h5>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">React</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">Vue.js</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">Angular</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">TypeScript</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Backend -->
+                            <div>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Backend</h5>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Node.js</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Python</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Express</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Django</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Mobile -->
+                            <div>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Mobile</h5>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">React Native</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Flutter</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Swift</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Kotlin</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact & Social Section -->
+                    <div>
+                        <h4 class="text-lg font-bold text-white mb-6">Restons en contact</h4>
+                        
+                        <!-- Newsletter -->
+                        <div class="mb-6">
+                            <p class="text-gray-300 text-sm mb-3">Recevez mes dernières actualités</p>
+                            <form class="space-y-3">
+                                <input type="email" placeholder="Votre email" class="w-full px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-accent transition-colors">
+                                <button type="submit" class="w-full bg-gradient-to-r from-accent to-yellow-500 text-white font-semibold py-2 rounded-lg hover:from-yellow-500 hover:to-accent transition-all duration-300 transform hover:scale-105">
+                                    <i class="fas fa-paper-plane mr-2"></i>S'abonner
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div>
+                            <p class="text-gray-300 text-sm mb-4">Suivez-moi</p>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/armi-levi-eleke-668594246/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-linkedin-in text-white group-hover:text-black"></i>
+                                </a>
+                                <a href="https://github.com/armilevieleke" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-github text-white group-hover:text-black"></i>
+                                </a>
+                                <a href="https://www.facebook.com/armi.levieleke" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fab fa-facebook-f text-white group-hover:text-black"></i>
+                                </a>
+                                <a href="mailto:armilevieleke@gmail.com" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent hover:scale-110 transition-all duration-300 group">
+                                    <i class="fas fa-envelope text-white group-hover:text-black"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Stats Bar -->
+                <div class="mt-12 pt-8 border-t border-white/10">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div class="group">
+                            <div class="text-2xl font-black text-white mb-1 group-hover:text-accent transition-colors">50+</div>
+                            <div class="text-xs text-gray-400">Projets livrés</div>
+                        </div>
+                        <div class="group">
+                            <div class="text-2xl font-black text-white mb-1 group-hover:text-accent transition-colors">5+</div>
+                            <div class="text-xs text-gray-400">Années d'expérience</div>
+                        </div>
+                        <div class="group">
+                            <div class="text-2xl font-black text-white mb-1 group-hover:text-accent transition-colors">100%</div>
+                            <div class="text-xs text-gray-400">Clients satisfaits</div>
+                        </div>
+                        <div class="group">
+                            <div class="text-2xl font-black text-white mb-1 group-hover:text-accent transition-colors">24/7</div>
+                            <div class="text-xs text-gray-400">Support disponible</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <!-- Copyright -->
+                        <div class="text-gray-400 text-sm">
+                            &copy; 2024 Armi Levi Eleke. Tous droits réservés.
+                        </div>
+                        
+                        <!-- Legal Links -->
+                        <div class="flex space-x-6 text-sm">
+                            <a href="#" class="text-gray-400 hover:text-accent transition-colors">Mentions légales</a>
+                            <a href="#" class="text-gray-400 hover:text-accent transition-colors">Politique de confidentialité</a>
+                            <a href="#" class="text-gray-400 hover:text-accent transition-colors">CGV</a>
+                        </div>
+                        
+                        <!-- Back to Top -->
+                        <button id="back-to-top" class="group flex items-center text-gray-400 hover:text-accent transition-colors text-sm">
+                            <i class="fas fa-arrow-up mr-2 group-hover:-translate-y-1 transition-transform"></i>
+                            Retour en haut
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Performance and UX Optimizations
+        class PortfolioApp {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                this.setupLoadingScreen();
+                this.setupNavigation();
+                this.setupScrollEffects();
+                this.setupAnimations();
+                this.setupInteractions();
+                this.setupMobileOptimizations();
+                this.setupAccessibility();
+                this.setupContactForm();
+            }
+
+            // Expert Loading Screen
+            setupLoadingScreen() {
+                    const loadingScreen = document.getElementById('loading-screen');
+                const progressBar = document.querySelector('.loading-progress-bar');
+                const percentage = document.getElementById('loading-percentage');
+                
+                let progress = 0;
+                const duration = 3000; // 3 secondes
+                const interval = 50; // Mise à jour toutes les 50ms
+                const increment = 100 / (duration / interval);
+                
+                // Animation de progression réaliste
+                const progressInterval = setInterval(() => {
+                    progress += increment;
+                    
+                    if (progress <= 100) {
+                        progressBar.style.width = progress + '%';
+                        percentage.textContent = Math.round(progress) + '%';
+                    } else {
+                        clearInterval(progressInterval);
+                    }
+                }, interval);
+                
+                // Simulation de chargement des ressources
+                const loadingSteps = [
+                    { step: 'Initialisation...', delay: 200 },
+                    { step: 'Chargement des composants...', delay: 800 },
+                    { step: 'Optimisation des performances...', delay: 1200 },
+                    { step: 'Finalisation...', delay: 1800 }
+                ];
+                
+                loadingSteps.forEach((step, index) => {
+                    setTimeout(() => {
+                        const subtitle = document.querySelector('.loading-subtitle');
+                        subtitle.textContent = step.step;
+                    }, step.delay);
+                });
+                
+                // Fermeture du preloader
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        loadingScreen.classList.add('exiting');
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                    }, 1000);
+                    }, duration + 500);
+                });
+                
+                // Fallback si la page met trop de temps à charger
+                setTimeout(() => {
+                    if (loadingScreen.style.display !== 'none') {
+                        loadingScreen.classList.add('exiting');
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 1000);
+                    }
+                }, 8000);
+            }
+
+            // Navigation
+            setupNavigation() {
+                const navbar = document.getElementById('navbar');
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+                // Navbar scroll effect
+                let lastScrollY = window.scrollY;
+                window.addEventListener('scroll', () => {
+                    const currentScrollY = window.scrollY;
+                    
+                    if (currentScrollY > 100) {
+                        navbar.classList.add('nav-blur');
+                    } else {
+                        navbar.classList.remove('nav-blur');
+                    }
+
+                    // Hide/show navbar on scroll
+                    if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                        navbar.style.transform = 'translateY(-100%)';
+                    } else {
+                        navbar.style.transform = 'translateY(0)';
+                    }
+                    lastScrollY = currentScrollY;
+                });
+
+                // Mobile menu
+                if (mobileMenuBtn && mobileMenu) {
+                    mobileMenuBtn.addEventListener('click', () => {
+                        mobileMenu.classList.remove('-translate-x-full');
+                        mobileMenu.classList.add('translate-x-0');
+                        document.body.style.overflow = 'hidden';
+                    });
+
+                    mobileMenuClose.addEventListener('click', () => {
+                        mobileMenu.classList.add('-translate-x-full');
+                        mobileMenu.classList.remove('translate-x-0');
+                        document.body.style.overflow = 'auto';
+                    });
+
+                    // Close mobile menu on link click
+                    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('-translate-x-full');
+                            mobileMenu.classList.remove('translate-x-0');
+                            document.body.style.overflow = 'auto';
+                        });
+                    });
+                }
+
+                // Smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = document.querySelector(anchor.getAttribute('href'));
+                        if (target) {
+                            const offsetTop = target.offsetTop - 80;
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+
+                // Active navigation link
+                this.updateActiveNavLink();
+                window.addEventListener('scroll', () => this.updateActiveNavLink());
+            }
+
+            updateActiveNavLink() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-primary');
+                    link.classList.add('text-gray-700');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.remove('text-gray-700');
+                        link.classList.add('text-primary');
+                    }
+                });
+            }
+
+            // Scroll Effects
+            setupScrollEffects() {
+                // Scroll indicator
+                const scrollIndicator = document.getElementById('scroll-indicator');
+                const updateScrollIndicator = () => {
+                    const scrollTop = window.pageYOffset;
+                    const docHeight = document.body.scrollHeight - window.innerHeight;
+                    const scrollPercent = scrollTop / docHeight;
+                    scrollIndicator.style.transform = `scaleX(${scrollPercent})`;
+                };
+
+                // Throttled scroll events
+                let ticking = false;
+                const handleScroll = () => {
+                    if (!ticking) {
+                        requestAnimationFrame(() => {
+                            updateScrollIndicator();
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                };
+
+                window.addEventListener('scroll', handleScroll, { passive: true });
+            }
+
+            // Animations
+            setupAnimations() {
+                // Intersection Observer for scroll animations
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animated');
+                        }
+                    });
+                }, observerOptions);
+
+                document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                    observer.observe(el);
+                });
+
+                // Staggered animations
+                document.querySelectorAll('.animate-on-scroll').forEach((el, index) => {
+                    el.style.animationDelay = `${index * 0.1}s`;
+                });
+
+                // Particle system
+                this.setupParticleSystem();
+            }
+
+            setupParticleSystem() {
+                const particleContainer = document.getElementById('particle-container');
+                
+                const createParticle = () => {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.width = particle.style.height = Math.random() * 4 + 2 + 'px';
+                    particle.style.animationDuration = Math.random() * 3 + 5 + 's';
+                    particle.style.animationDelay = Math.random() * 2 + 's';
+                    
+                    particleContainer.appendChild(particle);
+                    
+                    setTimeout(() => {
+                        particle.remove();
+                    }, 8000);
+                };
+
+                // Create particles periodically
+                setInterval(createParticle, 3000);
+            }
+
+            // Interactions
+            setupInteractions() {
+                // Magnetic effect
+                document.querySelectorAll('.magnetic').forEach(element => {
+                    element.addEventListener('mousemove', (e) => {
+                        const rect = element.getBoundingClientRect();
+                        const x = e.clientX - rect.left - rect.width / 2;
+                        const y = e.clientY - rect.top - rect.height / 2;
+                        
+                        element.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+                    });
+                    
+                    element.addEventListener('mouseleave', () => {
+                        element.style.transform = 'translate(0, 0)';
+                    });
+                });
+
+                // Project filter
+                this.setupProjectFilter();
+
+                // Hover effects
+                document.querySelectorAll('.hover-lift, .hover-scale, .hover-glow').forEach(element => {
+                    element.addEventListener('mouseenter', () => {
+                        element.style.willChange = 'transform';
+                    });
+                    
+                    element.addEventListener('mouseleave', () => {
+                        element.style.willChange = 'auto';
+                    });
+                });
+            }
+
+            setupProjectFilter() {
+                const filterButtons = document.querySelectorAll('.filter-btn');
+                const projectCards = document.querySelectorAll('.project-card');
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        // Update active button
+                        filterButtons.forEach(btn => {
+                            btn.classList.remove('active', 'bg-primary', 'text-white');
+                            btn.classList.add('bg-gray-100', 'text-gray-700');
+                        });
+                        button.classList.add('active', 'bg-primary', 'text-white');
+                        button.classList.remove('bg-gray-100', 'text-gray-700');
+
+                        // Filter projects
+                        const filter = button.textContent.toLowerCase();
+                        projectCards.forEach(card => {
+                            if (filter === 'tous' || card.dataset.category === filter) {
+                                card.style.display = 'block';
+                                card.style.animation = 'fadeIn 0.5s ease-in-out';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+
+            // Mobile Optimizations
+            setupMobileOptimizations() {
+                // Touch optimizations
+                if ('ontouchstart' in window) {
+                    document.body.classList.add('touch-device');
+                }
+
+                // Viewport height fix for mobile
+                const setVH = () => {
+                    const vh = window.innerHeight * 0.01;
+                    document.documentElement.style.setProperty('--vh', `${vh}px`);
+                };
+                setVH();
+                window.addEventListener('resize', setVH);
+
+                // Prevent zoom on input focus (iOS)
+                const inputs = document.querySelectorAll('input, textarea, select');
+                inputs.forEach(input => {
+                    input.addEventListener('focus', () => {
+                        if (window.innerWidth < 768) {
+                            input.style.fontSize = '16px';
+                        }
+                    });
+                });
+            }
+
+            // Accessibility
+            setupAccessibility() {
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Tab') {
+                        document.body.classList.add('keyboard-navigation');
+                    }
+                });
+
+                document.addEventListener('mousedown', () => {
+                    document.body.classList.remove('keyboard-navigation');
+                });
+
+                // Focus management
+                const focusableElements = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+                
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        // Close mobile menu
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('-translate-x-full')) {
+                            mobileMenu.classList.add('-translate-x-full');
+                            mobileMenu.classList.remove('translate-x-0');
+                            document.body.style.overflow = 'auto';
+                        }
+                    }
+                });
+
+                // Skip to content link
+                const skipLink = document.createElement('a');
+                skipLink.href = '#accueil';
+                skipLink.textContent = 'Aller au contenu principal';
+                skipLink.className = 'sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded z-50';
+                document.body.insertBefore(skipLink, document.body.firstChild);
+
+                // Back to top functionality
+                this.setupBackToTop();
+            }
+
+            setupBackToTop() {
+                const backToTopBtn = document.getElementById('back-to-top');
+                if (backToTopBtn) {
+                    // Show/hide button based on scroll position
+                    window.addEventListener('scroll', () => {
+                        if (window.scrollY > 300) {
+                            backToTopBtn.style.opacity = '1';
+                            backToTopBtn.style.visibility = 'visible';
+                        } else {
+                            backToTopBtn.style.opacity = '0';
+                            backToTopBtn.style.visibility = 'hidden';
+                        }
+                    });
+
+                    // Smooth scroll to top
+                    backToTopBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            }
+
+            // Contact Form
+            setupContactForm() {
+                const form = document.getElementById('contactForm');
+                const submitBtn = document.getElementById('submitBtn');
+                const submitText = document.getElementById('submitText');
+                const formStatus = document.getElementById('formStatus');
+
+                if (!form) return;
+
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Envoi en cours...';
+                    submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+                    
+                    // Hide previous status messages
+                    formStatus.classList.add('hidden');
+                    
+                    try {
+                        const formData = new FormData(form);
+                        
+                        const response = await fetch(form.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            // Success
+                            formStatus.className = 'p-4 rounded-2xl text-center font-semibold bg-green-500/20 text-green-400 border border-green-500/30';
+                            formStatus.textContent = 'Message envoyé avec succès ! Je vous répondrai bientôt.';
+                            formStatus.classList.remove('hidden');
+                            
+                            // Reset form
+                            form.reset();
+                        } else {
+                            throw new Error('Erreur lors de l\'envoi');
+                        }
+                    } catch (error) {
+                        // Error
+                        formStatus.className = 'p-4 rounded-2xl text-center font-semibold bg-red-500/20 text-red-400 border border-red-500/30';
+                        formStatus.textContent = 'Erreur lors de l\'envoi. Veuillez réessayer ou me contacter directement.';
+                        formStatus.classList.remove('hidden');
+                    } finally {
+                        // Reset button state
+                        submitBtn.disabled = false;
+                        submitText.textContent = 'Envoyer le message';
+                        submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+                    }
+                });
+
+                // Real-time validation
+                const inputs = form.querySelectorAll('input[required], textarea[required]');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', () => {
+                        if (input.value.trim() === '') {
+                            input.classList.add('border-red-500/50');
+                        } else {
+                            input.classList.remove('border-red-500/50');
+                        }
+                    });
+                });
+            }
+        }
+
+        // Initialize the app
+        document.addEventListener('DOMContentLoaded', () => {
+            new PortfolioApp();
+        });
+
+        // Service Worker for offline functionality (optional)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => console.log('SW registered'))
+                    .catch(error => console.log('SW registration failed'));
+            });
+        }
+
+        // Performance monitoring
+        if ('performance' in window) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    const perfData = performance.getEntriesByType('navigation')[0];
+                    console.log('Page load time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+                }, 0);
+            });
+        }
+    </script>
+</body>
+</html>
