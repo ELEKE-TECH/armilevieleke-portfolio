@@ -63,18 +63,31 @@
         ],
         "knowsAbout": [
             "Développement Web",
+            "Développement Mobile",
             "Design UI/UX",
+            "Infographie",
+            "Intelligence Artificielle",
+            "Marketing Digital",
+            "Community Management",
             "JavaScript",
-            "React",
+            "PHP",
+            "Flutter",
             "Node.js",
-            "HTML/CSS",
-            "Responsive Design",
-            "Full Stack Development"
+            "Flask",
+            "MySQL",
+            "MongoDB",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "Figma",
+            "ChatGPT",
+            "Prompt Engineering",
+            "Microsoft Office",
+            "Analyse de données"
         ],
         "hasOccupation": {
             "@type": "Occupation",
-            "name": "Développeur Fullstack",
-            "description": "Développement d'applications web complètes, de la conception à la mise en production"
+            "name": "Développeur Fullstack & Expert IA",
+            "description": "Développement d'applications web et mobiles, design UI/UX, infographie, intelligence artificielle générative, marketing digital et community management"
         },
         "alumniOf": {
             "@type": "EducationalOrganization",
@@ -619,6 +632,12 @@
             100% { width: 100%; }
         }
 
+        @keyframes progress-load {
+            0% { width: 0%; }
+            50% { width: var(--progress-width, 75%); }
+            100% { width: var(--progress-width, 75%); }
+        }
+
         @keyframes progressShine {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
@@ -888,55 +907,89 @@
                 </div>
                 
                 <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="#accueil" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                <div class="hidden lg:flex items-center space-x-2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-3 shadow-lg border border-white/20">
+                    <a href="#accueil" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
                         Accueil
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
                     </a>
-                    <a href="#projets" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                    <a href="#competences" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
+                        Compétences
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
+                    </a>
+                    <a href="#projets" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
                         Projets
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
                     </a>
-                    <a href="#designs" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                    <a href="#designs" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
                         Designs
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
                     </a>
-                    <a href="#formations" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                    <a href="#formations" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
                         Formations
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
                     </a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors relative group">
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-primary transition-colors relative group px-4 py-2 rounded-xl hover:bg-primary/10">
                         Contact
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                        <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-3/4"></span>
                     </a>
-                    <a href="#contact" class="btn-primary text-sm px-6 py-2">
+                    <a href="#contact" class="btn-primary text-sm px-6 py-2 ml-2">
                         <i class="fas fa-envelope mr-2"></i>Me contacter
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="lg:hidden text-primary hover:text-accent transition-colors p-2 focus-visible">
-                    <i class="fas fa-bars text-xl"></i>
+                <button id="mobile-menu-btn" class="lg:hidden p-3 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/20 hover:bg-white transition-colors">
+                    <i class="fas fa-bars text-xl text-gray-800"></i>
                 </button>
             </div>
 
             <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-screen bg-white z-40 transform -translate-x-full transition-transform duration-300">
-                <div class="flex flex-col h-full">
-                    <div class="flex justify-between items-center p-4 border-b">
-                        <div class="text-xl font-bold gradient-text">Armi Levi Eleke</div>
-                        <button id="mobile-menu-close" class="text-gray-500 hover:text-primary p-2">
-                            <i class="fas fa-times text-xl"></i>
+            <div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-slate-900 via-primary to-blue-900 z-40 transform -translate-x-full transition-transform duration-300">
+                <div class="flex flex-col h-full relative overflow-hidden">
+                    <!-- Background Pattern -->
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="absolute inset-0" style="background-image: 
+                            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+                            background-size: 30px 30px;"></div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="absolute top-20 right-10 w-20 h-20 bg-accent/20 rounded-full animate-float will-change-transform blur-sm"></div>
+                    <div class="absolute bottom-20 left-10 w-16 h-16 bg-white/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+                    
+                    <!-- Header -->
+                    <div class="flex justify-between items-center p-6 border-b border-white/10 relative z-10">
+                        <div class="text-xl font-bold text-white">Armi Levi Eleke</div>
+                        <button id="mobile-menu-close" class="p-3 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors">
+                            <i class="fas fa-times text-xl text-white"></i>
                         </button>
                     </div>
-                    <div class="flex-1 flex flex-col justify-center items-center space-y-8">
-                        <a href="#accueil" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Accueil</a>
-                        <a href="#projets" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Projets</a>
-                        <a href="#designs" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Designs</a>
-                        <a href="#formations" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Formations</a>
-                        <a href="#contact" class="mobile-nav-link text-2xl text-gray-700 hover:text-primary transition-colors">Contact</a>
-                        <a href="#contact" class="btn-primary text-lg px-8 py-3 mt-4">
-                            <i class="fas fa-envelope mr-2"></i>Me contacter
+                    
+                    <!-- Navigation Links -->
+                    <div class="flex-1 flex flex-col justify-center items-center space-y-6 relative z-10 px-6">
+                        <a href="#accueil" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-home mr-3"></i>Accueil
+                        </a>
+                        <a href="#competences" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-cogs mr-3"></i>Compétences
+                        </a>
+                        <a href="#projets" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-code mr-3"></i>Projets
+                        </a>
+                        <a href="#designs" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-palette mr-3"></i>Designs
+                        </a>
+                        <a href="#formations" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-graduation-cap mr-3"></i>Formations
+                        </a>
+                        <a href="#contact" class="mobile-nav-link w-full text-center py-4 px-6 text-2xl text-white hover:text-accent transition-colors rounded-2xl hover:bg-white/10 backdrop-blur-md border border-white/10">
+                            <i class="fas fa-envelope mr-3"></i>Contact
+                        </a>
+                        
+                        <!-- CTA Button -->
+                        <a href="#contact" class="w-full text-center py-4 px-6 text-xl font-bold text-black bg-gradient-to-r from-accent to-yellow-500 rounded-2xl hover:from-yellow-500 hover:to-accent transition-all duration-300 transform hover:scale-105 mt-8">
+                            <i class="fas fa-rocket mr-2"></i>Me contacter
                         </a>
                     </div>
                 </div>
@@ -1044,89 +1097,55 @@
                     </div>
                 </div>
                 
-                <!-- Right Content - Professional Skills Showcase -->
+                <!-- Right Content - Professional Image/Visual -->
                 <div class="relative animate-scale-in" style="animation-delay: 0.4s;">
-                    <!-- Main Skills Card -->
+                    <!-- Professional Visual Card -->
                     <div class="glass-effect rounded-3xl p-8 hover-lift relative overflow-hidden">
                         <!-- Background Pattern -->
                         <div class="absolute inset-0 opacity-5">
                             <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 20px 20px;"></div>
                         </div>
                         
-                        <div class="relative z-10">
-                            <div class="text-center mb-8">
-                                <h3 class="text-2xl font-bold text-white mb-2">Expertise Technique</h3>
-                                <p class="text-blue-200">Technologies maîtrisées</p>
-                            </div>
-                            
-                            <div class="grid grid-cols-2 gap-6">
-                                <!-- Development Skills -->
-                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group">
-                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
-                                        <i class="fas fa-code text-2xl text-accent"></i>
-                                    </div>
-                                    <h4 class="font-bold text-white mb-2 text-center">Développement</h4>
-                                    <p class="text-sm text-blue-200 text-center">Web & Mobile</p>
-                                    <div class="mt-3 flex justify-center">
-                                        <div class="w-full bg-white/20 rounded-full h-1">
-                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-4/5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Design Skills -->
-                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.1s;">
-                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
-                                        <i class="fas fa-palette text-2xl text-accent"></i>
-                                    </div>
-                                    <h4 class="font-bold text-white mb-2 text-center">Design</h4>
-                                    <p class="text-sm text-blue-200 text-center">UI/UX</p>
-                                    <div class="mt-3 flex justify-center">
-                                        <div class="w-full bg-white/20 rounded-full h-1">
-                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-5/6"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Training Skills -->
-                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.2s;">
-                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
-                                        <i class="fas fa-chalkboard-teacher text-2xl text-accent"></i>
-                                    </div>
-                                    <h4 class="font-bold text-white mb-2 text-center">Formation</h4>
-                                    <p class="text-sm text-blue-200 text-center">Expertise</p>
-                                    <div class="mt-3 flex justify-center">
-                                        <div class="w-full bg-white/20 rounded-full h-1">
-                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-4/5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Innovation Skills -->
-                                <div class="bg-white/10 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 magnetic group" style="animation-delay: 0.3s;">
-                                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-accent/30 to-accent/10 rounded-2xl flex items-center justify-center group-hover:from-accent/50 group-hover:to-accent/30 transition-all duration-300">
-                                        <i class="fas fa-rocket text-2xl text-accent"></i>
-                                    </div>
-                                    <h4 class="font-bold text-white mb-2 text-center">Innovation</h4>
-                                    <p class="text-sm text-blue-200 text-center">Créativité</p>
-                                    <div class="mt-3 flex justify-center">
-                                        <div class="w-full bg-white/20 rounded-full h-1">
-                                            <div class="bg-gradient-to-r from-accent to-yellow-400 h-1 rounded-full w-5/6"></div>
-                                        </div>
-                                    </div>
+                        <div class="relative z-10 text-center">
+                            <!-- Professional Avatar Placeholder -->
+                            <div class="w-48 h-48 mx-auto mb-8 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full flex items-center justify-center border-4 border-accent/30">
+                                <div class="w-40 h-40 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center">
+                                    <span class="text-6xl font-black text-white">AL</span>
                                 </div>
                             </div>
                             
-                            <!-- Professional Technologies -->
-                            <div class="mt-8 pt-6 border-t border-white/10">
-                                <p class="text-center text-blue-200 text-sm mb-4">Technologies maîtrisées</p>
-                                <div class="flex flex-wrap justify-center gap-2">
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">React</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Node.js</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">TypeScript</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Python</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">AWS</span>
+                            <!-- Professional Badge -->
+                            <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent/20 to-accent/10 rounded-full border border-accent/30 text-accent font-semibold text-sm mb-6">
+                                <div class="w-2 h-2 bg-accent rounded-full mr-3 animate-ping"></div>
+                                <i class="fas fa-star mr-2"></i>Expert Multidisciplinaire
+                            </div>
+                            
+                            <!-- Quick Skills Overview -->
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-all duration-300">
+                                    <i class="fas fa-code text-2xl text-accent mb-2"></i>
+                                    <p class="text-white text-sm font-semibold">Développement</p>
                                 </div>
+                                <div class="bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-all duration-300">
+                                    <i class="fas fa-palette text-2xl text-accent mb-2"></i>
+                                    <p class="text-white text-sm font-semibold">Design</p>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-all duration-300">
+                                    <i class="fas fa-robot text-2xl text-accent mb-2"></i>
+                                    <p class="text-white text-sm font-semibold">IA</p>
+                                </div>
+                                <div class="bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-all duration-300">
+                                    <i class="fas fa-bullhorn text-2xl text-accent mb-2"></i>
+                                    <p class="text-white text-sm font-semibold">Marketing</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Call to Action -->
+                            <div class="mt-8">
+                                <a href="#competences" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-accent/20 to-accent/10 text-accent font-semibold rounded-xl border border-accent/30 hover:bg-accent/20 transition-all duration-300">
+                                    <i class="fas fa-arrow-down mr-2"></i>
+                                    Voir mes compétences
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1139,6 +1158,171 @@
             <div class="flex flex-col items-center text-white/60">
                 <span class="text-sm mb-2">Découvrir</span>
                 <i class="fas fa-chevron-down text-xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="py-24 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: 
+                linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+                background-size: 40px 40px;"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full animate-float will-change-transform blur-sm"></div>
+        <div class="absolute bottom-20 right-20 w-24 h-24 bg-accent/10 rounded-full animate-float will-change-transform blur-sm" style="animation-delay: -2s;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-20 animate-on-scroll">
+                <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 text-primary text-sm font-semibold mb-6">
+                    <div class="w-2 h-2 bg-primary rounded-full mr-3 animate-ping"></div>
+                    <i class="fas fa-cogs mr-2"></i>Expertise Technique
+                </div>
+                <h2 class="text-5xl sm:text-6xl font-black mb-8 gradient-text">
+                    Mes Compétences
+                </h2>
+                <p class="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+                    Un éventail complet de compétences techniques et créatives pour répondre à tous vos besoins digitaux
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Left Side - Main Skills Categories -->
+                <div class="animate-on-scroll">
+                    <div class="space-y-8">
+                        <!-- Développement Web & Mobile -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-code text-2xl text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Développement Web & Mobile</h3>
+                                    <p class="text-gray-600">Applications web et mobiles modernes</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">HTML5</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">CSS3</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">JavaScript</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">PHP</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">Flutter</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">Bootstrap</span>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">AngularJS</span>
+                            </div>
+                        </div>
+
+                        <!-- Design & Infographie -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-palette text-2xl text-accent"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Design & Infographie</h3>
+                                    <p class="text-gray-600">Création visuelle et prototypage</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Adobe Photoshop</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Adobe Illustrator</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Canva</span>
+                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">Figma</span>
+                            </div>
+                        </div>
+
+                        <!-- Intelligence Artificielle -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-purple-500/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-robot text-2xl text-purple-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Intelligence Artificielle</h3>
+                                    <p class="text-gray-600">IA générative et prompt engineering</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full">ChatGPT</span>
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full">DALL·E</span>
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full">Midjourney</span>
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full">Leonardo AI</span>
+                                <span class="px-3 py-1 bg-purple-500/10 text-purple-500 text-sm font-medium rounded-full">Prompt Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Additional Skills -->
+                <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="space-y-8">
+                        <!-- Bases de Données & API -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-database text-2xl text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Bases de Données & API</h3>
+                                    <p class="text-gray-600">Gestion et développement d'APIs</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">MySQL</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">MongoDB</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">Oracle</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">NodeJS</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">Flask</span>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-sm font-medium rounded-full">TypeScript</span>
+                            </div>
+                        </div>
+
+                        <!-- Marketing & Communication -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-bullhorn text-2xl text-green-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Marketing & Communication</h3>
+                                    <p class="text-gray-600">Stratégies digitales et community management</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-green-500/10 text-green-500 text-sm font-medium rounded-full">Marketing Digital</span>
+                                <span class="px-3 py-1 bg-green-500/10 text-green-500 text-sm font-medium rounded-full">Community Management</span>
+                                <span class="px-3 py-1 bg-green-500/10 text-green-500 text-sm font-medium rounded-full">Microsoft Office</span>
+                                <span class="px-3 py-1 bg-green-500/10 text-green-500 text-sm font-medium rounded-full">Jupyter</span>
+                                <span class="px-3 py-1 bg-green-500/10 text-green-500 text-sm font-medium rounded-full">Pandas</span>
+                            </div>
+                        </div>
+
+                        <!-- Maintenance & Réseaux -->
+                        <div class="glass-effect rounded-3xl p-8 hover-lift">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500/20 to-yellow-500/10 rounded-2xl flex items-center justify-center mr-6">
+                                    <i class="fas fa-tools text-2xl text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Maintenance & Réseaux</h3>
+                                    <p class="text-gray-600">Support technique et infrastructure</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-500 text-sm font-medium rounded-full">Maintenance Logiciel</span>
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-500 text-sm font-medium rounded-full">Maintenance Matériel</span>
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-500 text-sm font-medium rounded-full">Réseaux Informatiques</span>
+                                <span class="px-3 py-1 bg-yellow-500/10 text-yellow-500 text-sm font-medium rounded-full">Informatique Bureautique</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1176,249 +1360,86 @@
                 </p>
             </div>
 
-            <!-- Professional Filter System -->
-            <div class="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll">
-                <button class="filter-btn active group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-gradient-to-r from-primary to-blue-600 text-white shadow-lg hover:shadow-xl transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-th-large mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Tous les projets
-                    </span>
-                </button>
-                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-globe mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Applications Web
-                    </span>
-                </button>
-                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-mobile-alt mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Applications Mobile
-                    </span>
-                </button>
-                <button class="filter-btn group px-8 py-4 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-primary hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-shopping-cart mr-2 group-hover:rotate-12 transition-transform"></i>
-                        E-commerce
-                    </span>
-                </button>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projet 1 -->
-                <div class="animate-on-scroll group project-card" data-category="e-commerce" style="animation-delay: 0.1s;">
-                    <div class="relative bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
-                        <!-- Project Image/Icon -->
-                        <div class="relative h-56 bg-gradient-to-br from-primary via-blue-600 to-blue-800 overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-gradient-x transition-all duration-700"></div>
-                            
-                            <!-- Floating Elements -->
-                            <div class="absolute top-4 left-4 w-12 h-12 bg-white/20 rounded-full animate-float"></div>
-                            <div class="absolute bottom-4 right-4 w-8 h-8 bg-accent/30 rounded-full animate-float" style="animation-delay: -1s;"></div>
-                            
-                            <!-- Main Icon -->
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                                    <i class="fas fa-shopping-cart text-4xl text-white"></i>
-                                </div>
+            <!-- Coming Soon Message -->
+            <div class="text-center animate-on-scroll">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Construction Icon -->
+                    <div class="mb-12">
+                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center relative">
+                            <div class="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center animate-pulse">
+                                <i class="fas fa-hammer text-4xl text-white animate-bounce"></i>
                             </div>
-                            
-                            <!-- Category Badge -->
-                            <div class="absolute top-4 right-4">
-                                <span class="px-4 py-2 bg-accent text-white text-xs font-bold rounded-full shadow-lg">
-                                    <i class="fas fa-store mr-1"></i>E-commerce
-                                </span>
+                            <!-- Floating Tools -->
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center animate-float">
+                                <i class="fas fa-wrench text-sm text-white"></i>
                             </div>
-                            
-                            <!-- Overlay -->
-                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                            <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center animate-float" style="animation-delay: -1s;">
+                                <i class="fas fa-screwdriver text-xs text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Message -->
+                    <div class="glass-effect rounded-3xl p-12 relative overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-5">
+                            <div class="absolute inset-0" style="background-image: 
+                                linear-gradient(rgba(30, 64, 175, 0.1) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(30, 64, 175, 0.1) 1px, transparent 1px);
+                                background-size: 20px 20px;"></div>
                         </div>
                         
-                        <!-- Project Content -->
-                        <div class="p-8">
-                            <!-- Header -->
-                            <div class="flex items-start justify-between mb-4">
-                                <div>
-                                    <h3 class="text-2xl font-black text-primary group-hover:text-accent transition-colors mb-2">
-                                        E-Commerce Platform
-                                    </h3>
-                                    <div class="flex items-center text-sm text-gray-500">
-                                        <i class="fas fa-calendar mr-2"></i>
-                                        <span>2024</span>
-                                        <span class="mx-2">•</span>
-                                        <i class="fas fa-clock mr-2"></i>
-                                        <span>3 mois</span>
-                                    </div>
-                                </div>
-                                <div class="flex space-x-3">
-                                    <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group/link">
-                                        <i class="fas fa-external-link-alt text-sm group-hover/link:scale-110 transition-transform"></i>
-                                    </a>
-                                    <a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 group/link">
-                                        <i class="fab fa-github text-sm group-hover/link:scale-110 transition-transform"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <!-- Description -->
-                            <p class="text-gray-600 mb-6 leading-relaxed">
-                                Plateforme e-commerce complète avec système de panier avancé, 
-                                paiement sécurisé et interface d'administration intuitive.
+                        <div class="relative z-10">
+                            <h3 class="text-4xl sm:text-5xl font-black text-primary mb-6 gradient-text">
+                                En Cours de Conception
+                            </h3>
+                            <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                Je travaille actuellement sur la mise en ligne de mes projets. 
+                                Cette section sera bientôt disponible avec mes réalisations les plus récentes.
                             </p>
                             
-                            <!-- Technologies -->
-                            <div class="mb-6">
-                                <h4 class="text-sm font-bold text-gray-700 mb-3">Technologies utilisées</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer">
-                                        React
-                                    </span>
-                                    <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full hover:bg-secondary hover:text-white transition-all duration-300 cursor-pointer">
-                                        Node.js
-                                    </span>
-                                    <span class="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full hover:bg-accent hover:text-white transition-all duration-300 cursor-pointer">
-                                        MongoDB
-                                    </span>
-                                    <span class="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full hover:bg-green-600 hover:text-white transition-all duration-300 cursor-pointer">
-                                        Stripe
-                                    </span>
+                            <!-- Progress Bar -->
+                            <div class="mb-8">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm font-semibold text-gray-700">Progression</span>
+                                    <span class="text-sm font-bold text-primary">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-primary to-accent rounded-full animate-pulse" style="width: 75%; animation: progress-load 2s ease-in-out infinite;"></div>
                                 </div>
                             </div>
                             
-                            <!-- Features -->
-                            <div class="mb-6">
-                                <h4 class="text-sm font-bold text-gray-700 mb-3">Fonctionnalités</h4>
-                                <ul class="space-y-1 text-sm text-gray-600">
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
-                                        Panier et checkout
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
-                                        Paiement sécurisé
-                                    </li>
-                                    <li class="flex items-center">
-                                        <i class="fas fa-check text-accent mr-2 text-xs"></i>
-                                        Dashboard admin
-                                    </li>
-                                </ul>
+                            <!-- Features Preview -->
+                            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-code text-2xl text-primary mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Applications Web</p>
+                                </div>
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-mobile-alt text-2xl text-accent mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Apps Mobile</p>
+                                </div>
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-shopping-cart text-2xl text-yellow-500 mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">E-commerce</p>
+                                </div>
                             </div>
                             
                             <!-- CTA -->
-                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                                <a href="#" class="text-primary font-bold hover:text-accent transition-colors inline-flex items-center group/cta">
-                                    Voir le projet 
-                                    <i class="fas fa-arrow-right ml-2 group-hover/cta:translate-x-1 transition-transform"></i>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="#contact" class="btn-primary text-lg px-8 py-4">
+                                    <i class="fas fa-envelope mr-2"></i>Me contacter pour plus d'infos
                                 </a>
-                                <div class="flex items-center text-xs text-gray-400">
-                                    <i class="fas fa-eye mr-1"></i>
-                                    <span>2.5k vues</span>
-                                </div>
+                                <a href="#competences" class="inline-flex items-center justify-center px-8 py-4 bg-white/50 text-primary font-semibold rounded-2xl border border-primary/20 hover:bg-primary hover:text-white transition-all duration-300">
+                                    <i class="fas fa-cogs mr-2"></i>Voir mes compétences
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Projet 2 -->
-                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.1s;">
-                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-mobile-alt text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">App Mobile Fitness</h3>
-                        <p class="text-secondary mb-4">Application mobile de suivi fitness avec tracking et communauté</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">React Native</span>
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Firebase</span>
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Redux</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
-                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Projet 3 -->
-                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.2s;">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-gray-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-chart-line text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Dashboard Analytics</h3>
-                        <p class="text-secondary mb-4">Tableau de bord analytique avec visualisations de données en temps réel</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Vue.js</span>
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">D3.js</span>
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Python</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
-                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Projet 4 -->
-                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.3s;">
-                    <div class="h-48 bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-graduation-cap text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Plateforme E-Learning</h3>
-                        <p class="text-secondary mb-4">Système d'apprentissage en ligne avec vidéos et quiz interactifs</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Angular</span>
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Express</span>
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">PostgreSQL</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
-                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Projet 5 -->
-                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.4s;">
-                    <div class="h-48 bg-gradient-to-br from-accent to-orange-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-utensils text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">App de Livraison</h3>
-                        <p class="text-secondary mb-4">Application de livraison de nourriture avec géolocalisation</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Flutter</span>
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Firebase</span>
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">Maps API</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
-                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Projet 6 -->
-                <div class="animate-on-scroll bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.5s;">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-indigo-600 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-briefcase text-6xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">CRM Entreprise</h3>
-                        <p class="text-secondary mb-4">Système de gestion de la relation client pour PME</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-primary text-white px-3 py-1 rounded-full text-sm hover:bg-blue-600 transition-colors">Next.js</span>
-                            <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm hover:bg-gray-600 transition-colors">Prisma</span>
-                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm hover:bg-yellow-600 transition-colors">MySQL</span>
-                        </div>
-                        <a href="#" class="text-primary font-semibold hover:text-blue-600 group-hover:translate-x-2 transition-all duration-300 inline-flex items-center">
-                            Voir le projet <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
+
+            <!-- End of Coming Soon Section -->
         </div>
     </section>
 
@@ -1456,133 +1477,94 @@
                 </p>
             </div>
 
-            <!-- Design Categories -->
-            <div class="flex flex-wrap justify-center gap-4 mb-16 animate-on-scroll">
-                <button class="design-filter-btn active group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-gradient-to-r from-accent to-yellow-500 text-white shadow-lg hover:shadow-xl transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-th-large mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Tous les designs
-                    </span>
-                </button>
-                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-mobile-alt mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Mobile UI
-                    </span>
-                </button>
-                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-desktop mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Web Design
-                    </span>
-                </button>
-                <button class="design-filter-btn group px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 bg-white text-gray-700 shadow-md hover:shadow-lg hover:bg-accent hover:text-white transform hover:scale-105">
-                    <span class="flex items-center">
-                        <i class="fas fa-paint-brush mr-2 group-hover:rotate-12 transition-transform"></i>
-                        Branding
-                    </span>
-                </button>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Design 1 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group">
-                    <div class="h-48 bg-gradient-to-br from-primary to-blue-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-paint-brush text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
+            <!-- Coming Soon Message -->
+            <div class="text-center animate-on-scroll">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Design Icon -->
+                    <div class="mb-12">
+                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-accent/20 to-primary/20 rounded-full flex items-center justify-center relative">
+                            <div class="w-24 h-24 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center animate-pulse">
+                                <i class="fas fa-palette text-4xl text-white animate-bounce"></i>
+                            </div>
+                            <!-- Floating Design Tools -->
+                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center animate-float">
+                                <i class="fas fa-paint-brush text-sm text-white"></i>
+                            </div>
+                            <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center animate-float" style="animation-delay: -1s;">
+                                <i class="fas fa-pencil-alt text-xs text-white"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">UI/UX Mobile</h3>
-                        <p class="text-sm text-secondary">Interface utilisateur moderne</p>
-                    </div>
-                </div>
-
-                <!-- Design 2 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.1s;">
-                    <div class="h-48 bg-gradient-to-br from-accent to-yellow-400 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-desktop text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Web Design</h3>
-                        <p class="text-sm text-secondary">Design responsive</p>
-                    </div>
-                </div>
-
-                <!-- Design 3 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.2s;">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-gray-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-palette text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Identité Visuelle</h3>
-                        <p class="text-sm text-secondary">Logo et branding</p>
-                    </div>
-                </div>
-
-                <!-- Design 4 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.3s;">
-                    <div class="h-48 bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-mobile-alt text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">App Design</h3>
-                        <p class="text-sm text-secondary">Interface mobile</p>
-                    </div>
-                </div>
-
-                <!-- Design 5 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.4s;">
-                    <div class="h-48 bg-gradient-to-br from-accent to-orange-400 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-chart-pie text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Dashboard UI</h3>
-                        <p class="text-sm text-secondary">Interface analytique</p>
-                    </div>
-                </div>
-
-                <!-- Design 6 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.5s;">
-                    <div class="h-48 bg-gradient-to-br from-secondary to-indigo-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-shopping-bag text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">E-commerce</h3>
-                        <p class="text-sm text-secondary">Design commercial</p>
-                    </div>
-                </div>
-
-                <!-- Design 7 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.6s;">
-                    <div class="h-48 bg-gradient-to-br from-primary to-teal-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-graduation-cap text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">E-learning</h3>
-                        <p class="text-sm text-secondary">Interface éducative</p>
-                    </div>
-                </div>
-
-                <!-- Design 8 -->
-                <div class="animate-on-scroll bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift group" style="animation-delay: 0.7s;">
-                    <div class="h-48 bg-gradient-to-br from-accent to-pink-500 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 group-hover:animate-gradient-x"></div>
-                        <i class="fas fa-heart text-4xl text-white group-hover:scale-110 transition-transform duration-300"></i>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-primary mb-2 group-hover:text-accent transition-colors">Social App</h3>
-                        <p class="text-sm text-secondary">Design social</p>
+                    
+                    <!-- Main Message -->
+                    <div class="glass-effect rounded-3xl p-12 relative overflow-hidden">
+                        <!-- Background Pattern -->
+                        <div class="absolute inset-0 opacity-5">
+                            <div class="absolute inset-0" style="background-image: 
+                                linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+                                background-size: 20px 20px;"></div>
+                        </div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-4xl sm:text-5xl font-black text-primary mb-6 gradient-text">
+                                Portfolio Design en Construction
+                            </h3>
+                            <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                Je prépare actuellement la mise en ligne de mes créations visuelles. 
+                                Cette galerie présentera mes designs UI/UX, illustrations et projets de branding.
+                            </p>
+                            
+                            <!-- Progress Bar -->
+                            <div class="mb-8">
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-sm font-semibold text-gray-700">Progression</span>
+                                    <span class="text-sm font-bold text-accent">60%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-accent to-yellow-500 rounded-full animate-pulse" style="width: 60%; animation: progress-load 2s ease-in-out infinite;"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Design Categories Preview -->
+                            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-mobile-alt text-2xl text-accent mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Mobile UI</p>
+                                </div>
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-desktop text-2xl text-primary mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Web Design</p>
+                                </div>
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-paint-brush text-2xl text-yellow-500 mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Branding</p>
+                                </div>
+                                <div class="text-center p-4 bg-white/50 rounded-2xl">
+                                    <i class="fas fa-image text-2xl text-green-500 mb-2"></i>
+                                    <p class="text-sm font-semibold text-gray-700">Illustrations</p>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA -->
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="#contact" class="btn-primary text-lg px-8 py-4">
+                                    <i class="fas fa-envelope mr-2"></i>Voir mes créations
+                                </a>
+                                <a href="#competences" class="inline-flex items-center justify-center px-8 py-4 bg-white/50 text-accent font-semibold rounded-2xl border border-accent/20 hover:bg-accent hover:text-white transition-all duration-300">
+                                    <i class="fas fa-cogs mr-2"></i>Mes compétences design
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- End of Coming Soon Section -->
         </div>
     </section>
+
+   
 
     <!-- Formations Section -->
     <section id="formations" class="py-24 bg-gradient-to-br from-primary/5 via-white to-accent/5 relative overflow-hidden">
@@ -1968,38 +1950,50 @@
                     
                     <!-- Technologies Section -->
                     <div>
-                        <h4 class="text-lg font-bold text-white mb-6">Technologies</h4>
+                        <h4 class="text-lg font-bold text-white mb-6">Compétences</h4>
                         <div class="space-y-4">
-                            <!-- Frontend -->
+                            <!-- Développement Web -->
                             <div>
-                                <h5 class="text-sm font-semibold text-accent mb-2">Frontend</h5>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Développement Web</h5>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">React</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">Vue.js</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">Angular</span>
-                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">TypeScript</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">HTML5</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">CSS3</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">JavaScript</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">PHP</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">Bootstrap</span>
+                                    <span class="px-3 py-1 bg-primary/20 text-primary text-xs rounded-full">AngularJS</span>
                                 </div>
                             </div>
                             
-                            <!-- Backend -->
+                            <!-- Mobile & API -->
                             <div>
-                                <h5 class="text-sm font-semibold text-accent mb-2">Backend</h5>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Mobile & API</h5>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Node.js</span>
-                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Python</span>
-                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Express</span>
-                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Django</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Flutter</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">NodeJS</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">Flask</span>
+                                    <span class="px-3 py-1 bg-secondary/20 text-secondary text-xs rounded-full">TypeScript</span>
                                 </div>
                             </div>
                             
-                            <!-- Mobile -->
+                            <!-- Design & IA -->
                             <div>
-                                <h5 class="text-sm font-semibold text-accent mb-2">Mobile</h5>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Design & IA</h5>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">React Native</span>
-                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Flutter</span>
-                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Swift</span>
-                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Kotlin</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Figma</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">Photoshop</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">ChatGPT</span>
+                                    <span class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full">DALL·E</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Bases de Données -->
+                            <div>
+                                <h5 class="text-sm font-semibold text-accent mb-2">Bases de Données</h5>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 text-xs rounded-full">MySQL</span>
+                                    <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 text-xs rounded-full">MongoDB</span>
+                                    <span class="px-3 py-1 bg-yellow-500/20 text-yellow-500 text-xs rounded-full">Oracle</span>
                                 </div>
                             </div>
                         </div>
