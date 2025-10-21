@@ -1477,90 +1477,15 @@
                 </p>
             </div>
 
-            <!-- Coming Soon Message -->
-            <div class="text-center animate-on-scroll">
-                <div class="max-w-4xl mx-auto">
-                    <!-- Design Icon -->
-                    <div class="mb-12">
-                        <div class="w-32 h-32 mx-auto bg-gradient-to-br from-accent/20 to-primary/20 rounded-full flex items-center justify-center relative">
-                            <div class="w-24 h-24 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center animate-pulse">
-                                <i class="fas fa-palette text-4xl text-white animate-bounce"></i>
+            <!-- Design Gallery -->
+            <div class="animate-on-scroll">
+                <div class="max-w-7xl mx-auto">
+                    <!-- Gallery Container -->
+                    <div id="design-gallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <!-- Les images seront chargées automatiquement ici -->
                             </div>
-                            <!-- Floating Design Tools -->
-                            <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center animate-float">
-                                <i class="fas fa-paint-brush text-sm text-white"></i>
                             </div>
-                            <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center animate-float" style="animation-delay: -1s;">
-                                <i class="fas fa-pencil-alt text-xs text-white"></i>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Main Message -->
-                    <div class="glass-effect rounded-3xl p-12 relative overflow-hidden">
-                        <!-- Background Pattern -->
-                        <div class="absolute inset-0 opacity-5">
-                            <div class="absolute inset-0" style="background-image: 
-                                linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
-                                linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px);
-                                background-size: 20px 20px;"></div>
-                        </div>
-                        
-                        <div class="relative z-10">
-                            <h3 class="text-4xl sm:text-5xl font-black text-primary mb-6 gradient-text">
-                                Portfolio Design en Construction
-                            </h3>
-                            <p class="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
-                                Je prépare actuellement la mise en ligne de mes créations visuelles. 
-                                Cette galerie présentera mes designs UI/UX, illustrations et projets de branding.
-                            </p>
-                            
-                            <!-- Progress Bar -->
-                            <div class="mb-8">
-                                <div class="flex justify-between items-center mb-4">
-                                    <span class="text-sm font-semibold text-gray-700">Progression</span>
-                                    <span class="text-sm font-bold text-accent">60%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                                    <div class="h-full bg-gradient-to-r from-accent to-yellow-500 rounded-full animate-pulse" style="width: 60%; animation: progress-load 2s ease-in-out infinite;"></div>
-                                </div>
-                            </div>
-                            
-                            <!-- Design Categories Preview -->
-                            <div class="grid md:grid-cols-4 gap-6 mb-8">
-                                <div class="text-center p-4 bg-white/50 rounded-2xl">
-                                    <i class="fas fa-mobile-alt text-2xl text-accent mb-2"></i>
-                                    <p class="text-sm font-semibold text-gray-700">Mobile UI</p>
-                                </div>
-                                <div class="text-center p-4 bg-white/50 rounded-2xl">
-                                    <i class="fas fa-desktop text-2xl text-primary mb-2"></i>
-                                    <p class="text-sm font-semibold text-gray-700">Web Design</p>
-                                </div>
-                                <div class="text-center p-4 bg-white/50 rounded-2xl">
-                                    <i class="fas fa-paint-brush text-2xl text-yellow-500 mb-2"></i>
-                                    <p class="text-sm font-semibold text-gray-700">Branding</p>
-                                </div>
-                                <div class="text-center p-4 bg-white/50 rounded-2xl">
-                                    <i class="fas fa-image text-2xl text-green-500 mb-2"></i>
-                                    <p class="text-sm font-semibold text-gray-700">Illustrations</p>
-                                </div>
-                            </div>
-                            
-                            <!-- CTA -->
-                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                                <a href="#contact" class="btn-primary text-lg px-8 py-4">
-                                    <i class="fas fa-envelope mr-2"></i>Voir mes créations
-                                </a>
-                                <a href="#competences" class="inline-flex items-center justify-center px-8 py-4 bg-white/50 text-accent font-semibold rounded-2xl border border-accent/20 hover:bg-accent hover:text-white transition-all duration-300">
-                                    <i class="fas fa-cogs mr-2"></i>Mes compétences design
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- End of Coming Soon Section -->
         </div>
     </section>
 
@@ -2576,5 +2501,8 @@
             });
         }
     </script>
+    
+    <!-- Design Gallery Script -->
+    <script src="js/design-gallery.js"></script>
 </body>
 </html>
