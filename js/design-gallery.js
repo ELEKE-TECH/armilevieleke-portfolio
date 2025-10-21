@@ -1,144 +1,27 @@
 // Design Gallery Script
-// Charge automatiquement les images de design depuis le dossier img/designs/
+// Gère les modals et téléchargements pour les images de design
 
 document.addEventListener('DOMContentLoaded', function() {
-    const galleryContainer = document.getElementById('design-gallery');
-    
-    if (!galleryContainer) {
-        console.error('Container #design-gallery not found');
-        return;
-    }
-
     // Configuration
-    const maxImages = 50; // Limite maximale d'images
     const imagePath = 'img/designs/';
-    const supportedFormats = ['jpg', 'jpeg', 'png', 'webp'];
     
-    // Fonction pour créer un élément d'image avec lazy loading
-    function createImageElement(imageNumber) {
-        const imageContainer = document.createElement('div');
-        imageContainer.className = 'group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-fade-in';
-        imageContainer.style.animationDelay = `${imageNumber * 0.1}s`;
-        
-        // Créer l'image avec lazy loading
-        const img = document.createElement('img');
-        img.className = 'w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110';
-        img.loading = 'lazy';
-        img.alt = `Design ${imageNumber}`;
-        img.src = `${imagePath}${imageNumber}.jpg`;
-        
-        // Gérer les erreurs de chargement
-        img.onerror = function() {
-            console.log(`Image ${imageNumber}.jpg not found, stopping gallery loading`);
-            return false; // Arrêter le chargement si l'image n'existe pas
-        };
-        
-        // Overlay avec informations
-        const overlay = document.createElement('div');
-        overlay.className = 'absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6';
-        
-        const overlayContent = document.createElement('div');
-        overlayContent.className = 'text-white';
-        overlayContent.innerHTML = `
-            <h3 class="text-lg font-bold mb-2">Design ${imageNumber}</h3>
-            <p class="text-sm text-gray-200 mb-4">Création visuelle professionnelle</p>
-            <div class="flex space-x-3">
-                <button class="view-btn bg-accent/80 hover:bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center">
-                    <i class="fas fa-expand mr-2"></i>
-                    Voir
-                </button>
-                <button class="download-btn bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center">
-                    <i class="fas fa-download mr-2"></i>
-                    Télécharger
-                </button>
-            </div>
-        `;
-        
-        overlay.appendChild(overlayContent);
-        imageContainer.appendChild(img);
-        imageContainer.appendChild(overlay);
-        
-        return imageContainer;
-    }
-    
-    // Fonction pour charger les images
-    function loadDesignImages() {
-        let imageNumber = 1;
-        let loadedCount = 0;
-        
-        const loadNextImage = () => {
-            if (loadedCount >= maxImages) {
-                console.log(`Maximum de ${maxImages} images atteint`);
-                return;
-            }
+    // Fonction pour ajouter les événements aux images existantes
+    function addImageEvents() {
+        // Ajouter les événements de clic droit sur toutes les images
+        const images = document.querySelectorAll('#design-gallery img');
+        images.forEach((img, index) => {
+            const imageNumber = index + 1;
             
-            // Créer l'élément image
-            const imageElement = createImageElement(imageNumber);
-            
-            // Tester si l'image existe
-            const testImg = new Image();
-            testImg.onload = function() {
-                // L'image existe, l'ajouter à la galerie
-                galleryContainer.appendChild(imageElement);
-                loadedCount++;
-                
-                // Ajouter les événements pour les boutons
-                addImageEvents(imageElement, imageNumber);
-                
-                // Charger l'image suivante
-                imageNumber++;
-                setTimeout(loadNextImage, 100); // Délai pour l'animation
-            };
-            
-            testImg.onerror = function() {
-                // L'image n'existe pas, arrêter le chargement
-                console.log(`Galerie chargée: ${loadedCount} images trouvées`);
-                return;
-            };
-            
-            testImg.src = `${imagePath}${imageNumber}.jpg`;
-        };
-        
-        // Démarrer le chargement
-        loadNextImage();
-    }
-    
-    // Fonction pour ajouter les événements aux boutons
-    function addImageEvents(imageElement, imageNumber) {
-        const viewBtn = imageElement.querySelector('.view-btn');
-        const downloadBtn = imageElement.querySelector('.download-btn');
-        
-        if (viewBtn) {
-            viewBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                openImageModal(imageNumber);
-            });
-        }
-        
-        if (downloadBtn) {
-            downloadBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                downloadImage(imageNumber);
-            });
-        }
-        
-        // Clic sur l'image pour ouvrir le modal
-        const img = imageElement.querySelector('img');
-        if (img) {
-            img.addEventListener('click', function() {
-                openImageModal(imageNumber);
-            });
-            
-            // Permettre le clic droit pour télécharger
+            // Clic droit pour instructions
             img.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
                 showRightClickInstructions(imageNumber);
             });
-        }
+        });
     }
     
-    // Fonction pour ouvrir le modal d'aperçu
-    function openImageModal(imageNumber) {
+    // Fonction pour ouvrir le modal d'aperçu (globale)
+    window.openImageModal = function(imageNumber) {
         // Créer le modal s'il n'existe pas
         let modal = document.getElementById('image-modal');
         if (!modal) {
@@ -208,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return modal;
     }
     
-    // Fonction pour télécharger une image
-    function downloadImage(imageNumber) {
+    // Fonction pour télécharger une image (globale)
+    window.downloadImage = function(imageNumber) {
         const imageUrl = `${imagePath}${imageNumber}.jpg`;
         const fileName = `design-${imageNumber}.jpg`;
         
@@ -628,8 +511,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 4000);
     }
     
-    // Démarrer le chargement des images
-    loadDesignImages();
+    // Ajouter les événements aux images existantes
+    addImageEvents();
     
     // Ajouter les styles CSS pour les animations
     const style = document.createElement('style');

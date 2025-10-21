@@ -45,3 +45,4 @@ Si vous rencontrez des problèmes :
 2. Vérifiez que les noms suivent le format `1.jpg`, `2.jpg`, etc.
 3. Vérifiez que les images sont dans le bon dossier (`img/designs/`)
 4. Rechargez la page pour voir les changements
+
